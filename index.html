@@ -1,0 +1,52 @@
+<!-- 📄 index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+
+    <!-- Expense Form -->
+    <form id="expense-form">
+      <input type="text" id="title" placeholder="Expense Title" required />
+      <input type="number" id="amount" placeholder="Amount (₹)" required />
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Bills</option>
+        <option>Shopping</option>
+        <option>Other</option>
+      </select>
+      <input type="date" id="date" required />
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <!-- Table to Show Expenses -->
+    <h2>Expenses</h2>
+    <table id="expense-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Amount (₹)</th>
+          <th>Category</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Chart for Category-wise Expense -->
+    <h2>Category-wise Insights</h2>
+    <canvas id="expense-chart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
