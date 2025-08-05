@@ -52,7 +52,3 @@ cd expense-tracker
 This project is open-source and available under the **MIT License**.
 
 
-> Replace with an actual screenshot after pushing to GitHub.
-
-## 📂 Project Structure
-
